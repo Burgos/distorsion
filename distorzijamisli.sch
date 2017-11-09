@@ -36,7 +36,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -365,7 +365,7 @@ I2S2_WS
 Text Label 12750 5550 0    60   ~ 0
 I2S2_CK
 Text Label 12750 5650 0    60   ~ 0
-I2S2_ext_SD
+PB14
 Entry Wire Line
 	12950 4550 13050 4650
 Entry Wire Line
@@ -1123,17 +1123,6 @@ F 3 "" H 12550 5550 50  0001 C CNN
 	1    12550 5550
 	0    1    1    0   
 $EndComp
-$Comp
-L R_Small R16
-U 1 1 5A03104F
-P 12550 5650
-F 0 "R16" V 12580 5670 50  0000 L CNN
-F 1 "R_Small" H 12580 5610 50  0000 L CNN
-F 2 "" H 12550 5650 50  0001 C CNN
-F 3 "" H 12550 5650 50  0001 C CNN
-	1    12550 5650
-	0    1    1    0   
-$EndComp
 Entry Wire Line
 	12950 6950 13050 7050
 Entry Wire Line
@@ -1145,7 +1134,7 @@ Entry Wire Line
 Entry Wire Line
 	12950 6650 13050 6750
 Text Label 12750 7150 0    60   ~ 0
-I2S3_ext_SD
+PC12
 Text Label 12750 7050 0    60   ~ 0
 I2S3_SD
 Text Label 12750 6950 0    60   ~ 0
@@ -1170,17 +1159,6 @@ F 1 "R_Small" H 12530 7010 50  0000 L CNN
 F 2 "" H 12500 7050 50  0001 C CNN
 F 3 "" H 12500 7050 50  0001 C CNN
 	1    12500 7050
-	0    1    1    0   
-$EndComp
-$Comp
-L R_Small R22
-U 1 1 5A03633C
-P 12500 7150
-F 0 "R22" V 12530 7170 50  0000 L CNN
-F 1 "R_Small" H 12530 7110 50  0000 L CNN
-F 2 "" H 12500 7150 50  0001 C CNN
-F 3 "" H 12500 7150 50  0001 C CNN
-	1    12500 7150
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1577,12 +1555,6 @@ F 3 "" H 13300 9050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Entry Wire Line
-	13400 7750 13500 7650
-Entry Wire Line
-	13500 7750 13600 7650
-Entry Wire Line
-	13600 7750 13700 7650
-Entry Wire Line
 	13700 7750 13800 7650
 Entry Wire Line
 	13800 7750 13900 7650
@@ -1602,22 +1574,18 @@ Text Label 14400 8100 1    60   ~ 0
 PC11
 Text Label 14300 8100 1    60   ~ 0
 PC10
-Text Label 14200 8100 1    60   ~ 0
-PC13
 Text Label 14100 8100 1    60   ~ 0
-PC8
+PC13
+Text Label 14200 8100 1    60   ~ 0
+PC12
 Text Label 14000 8100 1    60   ~ 0
-PB11
+PB14
 Text Label 13900 8100 1    60   ~ 0
 PB10
 Text Label 13800 8100 1    60   ~ 0
 PB9
 Text Label 13700 8100 1    60   ~ 0
 PB8
-Text Label 13600 8100 1    60   ~ 0
-PB1
-Text Label 13500 8100 1    60   ~ 0
-PB0
 Wire Wire Line
 	6700 1900 6700 2050
 Wire Wire Line
@@ -1988,13 +1956,11 @@ Wire Wire Line
 Wire Wire Line
 	12450 5550 12000 5550
 Wire Wire Line
-	12000 5650 12450 5650
+	12000 5650 12950 5650
 Wire Wire Line
 	12000 6250 12950 6250
 Wire Wire Line
 	12950 6850 12000 6850
-Wire Wire Line
-	12650 5650 12950 5650
 Wire Wire Line
 	12650 5550 12950 5550
 Wire Wire Line
@@ -2018,13 +1984,11 @@ Wire Wire Line
 Wire Wire Line
 	12000 7050 12400 7050
 Wire Wire Line
-	12400 7150 12000 7150
+	12000 7150 12950 7150
 Wire Wire Line
 	12600 6950 12950 6950
 Wire Wire Line
 	12600 7050 12950 7050
-Wire Wire Line
-	12600 7150 12950 7150
 Wire Wire Line
 	12000 2950 12400 2950
 Wire Wire Line
@@ -2359,12 +2323,6 @@ Wire Wire Line
 	14300 8850 14300 9050
 Connection ~ 14300 9050
 Wire Wire Line
-	13400 7750 13400 8350
-Wire Wire Line
-	13500 8350 13500 7750
-Wire Wire Line
-	13600 8350 13600 7750
-Wire Wire Line
 	13700 8350 13700 7750
 Wire Wire Line
 	13800 7750 13800 8350
@@ -2521,8 +2479,6 @@ F 3 "" H 8950 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2700 3050 3000 3050
-Wire Bus Line
-	14750 5000 14750 7300
 Entry Wire Line
 	14750 5000 14850 5100
 Entry Wire Line
@@ -2537,26 +2493,6 @@ Entry Wire Line
 	14750 5550 14850 5650
 Entry Wire Line
 	14750 5650 14850 5750
-Entry Wire Line
-	14750 5800 14850 5900
-Entry Wire Line
-	14750 5900 14850 6000
-Entry Wire Line
-	14750 6250 14850 6350
-Entry Wire Line
-	14750 6350 14850 6450
-Entry Wire Line
-	14750 6450 14850 6550
-Entry Wire Line
-	14750 6550 14850 6650
-Entry Wire Line
-	14750 6900 14850 7000
-Entry Wire Line
-	14750 7000 14850 7100
-Entry Wire Line
-	14750 7100 14850 7200
-Entry Wire Line
-	14750 7200 14850 7300
 Wire Wire Line
 	14850 5100 15200 5100
 Wire Wire Line
@@ -2571,26 +2507,6 @@ Wire Wire Line
 	14850 5650 15200 5650
 Wire Wire Line
 	14850 5750 15200 5750
-Wire Wire Line
-	14850 5900 15200 5900
-Wire Wire Line
-	14850 6000 15200 6000
-Wire Wire Line
-	14850 6350 15200 6350
-Wire Wire Line
-	14850 6450 15200 6450
-Wire Wire Line
-	14850 6550 15200 6550
-Wire Wire Line
-	14850 6650 15200 6650
-Wire Wire Line
-	14850 7000 15200 7000
-Wire Wire Line
-	14850 7100 15200 7100
-Wire Wire Line
-	14850 7200 15200 7200
-Wire Wire Line
-	14850 7300 15200 7300
 Text Label 15200 5100 0    60   ~ 0
 SPI1_MOSI
 Text Label 15200 5200 0    60   ~ 0
@@ -2605,10 +2521,6 @@ Text Label 15200 5650 0    60   ~ 0
 I2C1_SCL
 Text Label 15200 5750 0    60   ~ 0
 I2C1_SDA
-Text Label 15200 5900 0    60   ~ 0
-I2C3_SCL
-Text Label 15200 6000 0    60   ~ 0
-I2C3_SDA
 Wire Notes Line
 	15150 5400 15950 5400
 Wire Notes Line
@@ -2628,45 +2540,7 @@ Wire Notes Line
 Wire Notes Line
 	15150 5750 15150 5450
 Wire Notes Line
-	15150 5800 15150 6050
-Wire Notes Line
-	15150 6050 15950 6050
-Wire Notes Line
-	15950 6050 15950 5800
-Wire Notes Line
-	15950 5800 15150 5800
-Text Label 15200 6350 0    60   ~ 0
-I2S2_WS
-Text Label 15200 6450 0    60   ~ 0
-I2S2_CK
-Text Label 15200 6550 0    60   ~ 0
-I2S2_ext_SD
-Text Label 15200 6650 0    60   ~ 0
-I2S2_SD
-Text Label 15200 7300 0    60   ~ 0
-I2S3_SD
-Text Label 15200 7200 0    60   ~ 0
-I2S3_ext_SD
-Text Label 15200 7000 0    60   ~ 0
-I2S3_WS
-Text Label 15200 7100 0    60   ~ 0
-I2S3_CK
-Wire Notes Line
-	15100 6200 15100 6800
-Wire Notes Line
-	15100 6800 15950 6800
-Wire Notes Line
-	15950 6800 15950 6200
-Wire Notes Line
-	15950 6200 15100 6200
-Wire Notes Line
-	15100 6850 15100 7400
-Wire Notes Line
 	15950 7500 15100 7500
-Wire Notes Line
-	15950 6850 15950 7500
-Wire Notes Line
-	15950 6850 15100 6850
 Wire Wire Line
 	4150 8200 4500 8200
 Wire Wire Line
@@ -2675,22 +2549,6 @@ Wire Wire Line
 	4150 8400 4500 8400
 Wire Wire Line
 	4150 8500 4500 8500
-Wire Wire Line
-	4150 9450 4500 9450
-Wire Wire Line
-	4150 9550 4500 9550
-Wire Wire Line
-	4150 9650 4500 9650
-Wire Wire Line
-	4150 9750 4500 9750
-Wire Wire Line
-	4150 10000 4500 10000
-Wire Wire Line
-	4150 10100 4500 10100
-Wire Wire Line
-	4150 10200 4500 10200
-Wire Wire Line
-	4150 10300 4500 10300
 Text Label 4500 8200 0    60   ~ 0
 SPI1_MOSI
 Text Label 4500 8300 0    60   ~ 0
@@ -2711,77 +2569,11 @@ Text Notes 5200 8450 1    60   ~ 0
 SPI1
 Wire Notes Line
 	4450 8550 5250 8550
-Text Label 4500 9450 0    60   ~ 0
-I2S2_WS
-Text Label 4500 9550 0    60   ~ 0
-I2S2_CK
-Text Label 4500 9650 0    60   ~ 0
-I2S2_ext_SD
-Text Label 4500 9750 0    60   ~ 0
-I2S2_SD
-Text Label 4500 10300 0    60   ~ 0
-I2S3_SD
-Text Label 4500 10200 0    60   ~ 0
-I2S3_ext_SD
-Text Label 4500 10000 0    60   ~ 0
-I2S3_WS
-Text Label 4500 10100 0    60   ~ 0
-I2S3_CK
-Wire Notes Line
-	4400 9300 4400 9800
-Wire Notes Line
-	4400 9800 5250 9800
-Wire Notes Line
-	5250 9800 5250 9300
-Wire Notes Line
-	5250 9300 4400 9300
-Wire Notes Line
-	4400 9850 4400 10350
-Wire Notes Line
-	4400 10350 5250 10350
-Wire Notes Line
-	5250 10350 5250 9850
-Wire Notes Line
-	5250 9850 4400 9850
-NoConn ~ 4150 10300
-NoConn ~ 4150 10200
-NoConn ~ 4150 10100
-NoConn ~ 4150 10000
-NoConn ~ 4150 9750
-NoConn ~ 4150 9650
-NoConn ~ 4150 9550
-NoConn ~ 4150 9450
 NoConn ~ 4150 8500
 NoConn ~ 4150 8400
 NoConn ~ 4150 8300
 NoConn ~ 4150 8200
-Entry Wire Line
-	14750 7300 14850 7400
-Wire Wire Line
-	14850 7400 15200 7400
-Text Label 15200 7400 0    60   ~ 0
-I2S3_MCK
-Wire Notes Line
-	15100 7500 15100 7350
-Wire Wire Line
-	14850 6750 15200 6750
-Text Label 15200 6750 0    60   ~ 0
-I2S2_MCK
-Entry Wire Line
-	14750 6650 14850 6750
-Wire Wire Line
-	4150 10450 4500 10450
-Text Label 4500 10450 0    60   ~ 0
-I2S2_MCK
-Wire Wire Line
-	4150 10550 4500 10550
-Text Label 4500 10550 0    60   ~ 0
-I2S3_MCK
-NoConn ~ 4150 10450
-NoConn ~ 4150 10550
 NoConn ~ 15350 4250
-Text Label 13400 8100 1    60   ~ 0
-PA9
 $Comp
 L PWR_FLAG #FLG027
 U 1 1 5A0B4B0C
@@ -2813,4 +2605,60 @@ Wire Bus Line
 NoConn ~ 13300 8350
 Text Label 14750 3850 1    60   ~ 0
 USB_OTG_FS_ID
+$Sheet
+S 7550 9100 3850 1900
+U 5A0BF71D
+F0 "codec" 60
+F1 "codec.sch" 60
+F2 "PB11" O L 7550 9350 60 
+F3 "PC8" O L 7550 9500 60 
+F4 "PA9" I L 7550 9700 60 
+F5 "PB0" I L 7550 9900 60 
+F6 "PB1" I L 7550 10100 60 
+F7 "I2C3_SCL" I L 7550 10300 60 
+F8 "I2C3_SDA" B L 7550 10450 60 
+F9 "I2S3_MCK" I L 7550 10600 60 
+F10 "I2S3_WS" I L 7550 10750 60 
+F11 "I2S3_CK" I L 7550 10900 60 
+F12 "I2S3_SD" I R 11400 9250 60 
+F13 "I2S2_MCK" I R 11400 9450 60 
+F14 "I2S2_WS" I R 11400 9650 60 
+F15 "I2S2_CK" I R 11400 9850 60 
+F16 "I2S2_SD" O R 11400 10050 60 
+$EndSheet
+NoConn ~ 13400 8350
+NoConn ~ 13500 8350
+NoConn ~ 13600 8350
+Wire Bus Line
+	14750 5000 14750 5650
+Text Label 7550 9350 2    60   ~ 0
+PB11
+Text Label 7550 9500 2    60   ~ 0
+PC8
+Text Label 7550 9700 2    60   ~ 0
+PA9
+Text Label 7550 9900 2    60   ~ 0
+PB0
+Text Label 7550 10100 2    60   ~ 0
+PB1
+Text Label 7550 10300 2    60   ~ 0
+I2C3_SCL
+Text Label 7550 10450 2    60   ~ 0
+I2C3_SDA
+Text Label 7550 10600 2    60   ~ 0
+I2S3_MCK
+Text Label 7550 10750 2    60   ~ 0
+I2S3_WS
+Text Label 7550 10900 2    60   ~ 0
+I2S3_CK
+Text Label 11400 9250 0    60   ~ 0
+I2S3_SD
+Text Label 11400 9450 0    60   ~ 0
+I2S2_MCK
+Text Label 11400 9650 0    60   ~ 0
+I2S2_WS
+Text Label 11400 9850 0    60   ~ 0
+I2S2_CK
+Text Label 11400 10050 0    60   ~ 0
+I2S2_SD
 $EndSCHEMATC
