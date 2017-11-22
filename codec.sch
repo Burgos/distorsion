@@ -946,10 +946,8 @@ Text HLabel 4500 3800 0    60   Input ~ 0
 I2S2_WS
 Text HLabel 4500 3900 0    60   Input ~ 0
 I2S2_CK
-Text HLabel 4500 4000 0    60   Output ~ 0
+Text HLabel 3650 4000 0    60   Output ~ 0
 I2S2_SD
-Wire Wire Line
-	4500 4000 4600 4000
 Wire Wire Line
 	4600 3900 4500 3900
 Wire Wire Line
@@ -1000,4 +998,19 @@ Text GLabel 5400 1600 1    60   Input ~ 0
 Text GLabel 5200 2250 1    60   Input ~ 0
 3V
 Connection ~ 5200 2350
+$Comp
+L R R49
+U 1 1 5A18B75D
+P 3900 4000
+F 0 "R49" V 3980 4000 50  0000 C CNN
+F 1 "470" V 3900 4000 50  0000 C CNN
+F 2 "" V 3830 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    3900 4000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 4000 4600 4000
+Wire Wire Line
+	3650 4000 3750 4000
 $EndSCHEMATC
